@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <f:view locale="#{lokalizator.odabraniJezik}">
+        <h:head>
+            <title>#{m.index_naslov}</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+            <style>
+                .table-borderless > tbody > tr > td,
+                .table-borderless > tbody > tr > th,
+                .table-borderless > tfoot > tr > td,
+                .table-borderless > tfoot > tr > th,
+                .table-borderless > thead > tr > td,
+                .table-borderless > thead > tr > th {
+                    border: none;
+                }
+            </style>
+
+        </h:head>
+        <h:body>
+
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>#{m.header_naslov}</h1>
+                    <h3>#{m.header_opis}</h3>
+                    <h4>#{m.header_autor}</h4>
+                </div>
+                <h:form>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><b>#{m.index_naslov}</b></div>
+                        </div>
+                        <div class="panel-body">
+                            <h:selectOneRadio value="#{lokalizator.odabraniJezik}" class="table table-borderless">
+                                <f:selectItems value="#{lokalizator.izbornikJezika}"
+                                               var="j"
+                                               itemLabel="#{j.labela}"
+                                               itemValue="#{j.vrijednost}"
+                                               >
+                                </f:selectItems>
+                            </h:selectOneRadio>
+                            <h:commandButton value="#{m.index_promjena}" action="#{lokalizator.odaberiJezik}" class="btn btn-primary"></h:commandButton>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><b>#{m.index_akcije}</b></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="btn-toolbar">
+                                <h:commandLink value="#{m.index_slanje_poruka}" action="#{lokalizator.saljiPoruku()}" class="btn btn-default" role="button" />
+                                <h:commandLink value="#{m.index_pregled_poruka}" action="#{lokalizator.pregledPoruka()}" class="btn btn-default" role="button" />
+                            </div>
+                        </div>
+                    </div>
+                </h:form>
+
+                <div class="well">
+                    <p>	&reg; #{m.footer_text}</p>
+                </div>
+            </div>
+        </h:body>
+    </f:view>
+</html>
+

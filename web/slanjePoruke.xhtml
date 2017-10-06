@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <f:view locale="#{lokalizator.odabraniJezik}">
+        <h:head>
+            <title>#{m.slanjePoruke_naslov}</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </h:head>
+        <h:body>
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>#{m.header_naslov}</h1>
+                    <h3>#{m.header_opis}</h3>
+                    <h4>#{m.header_autor}</h4>
+                </div>
+                
+                <c:if test="#{slanjePoruke.uspjesno}" >
+                    <div class="alert alert-success alert-dismissable">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        #{m.slanjePoruke_uspjesnaPoruka}
+                    </div>
+                </c:if>
+                
+                <c:if test="#{slanjePoruke.neuspjesno}" >
+                    <div class="alert alert-danger alert-dismissable">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        #{m.slanjePoruke_neuspjesnaPoruka}
+                    </div>
+                </c:if>
+                
+                <h:form>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><b>#{m.slanjePoruke_naslov}</b></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <h:outputLabel value="#{m.slanjePoruke_salje}" for="salje"/>
+                                <h:inputText value="#{slanjePoruke.salje}" class="form-control" id="salje"/>
+                            </div>
+
+                            <div class="form-group">
+                                <h:outputLabel value="#{m.slanjePoruke_prima}" for="prima"/>
+                                <h:inputText value="#{slanjePoruke.prima}" class="form-control" id="prima"/>
+                            </div>
+
+                            <div class="form-group">
+                                <h:outputLabel value="#{m.slanjePoruke_predmet}" for="predmet"/>
+                                <h:inputText value="#{slanjePoruke.predmet}" class="form-control" id="predmet"/>
+                            </div>
+
+                            <div class="form-group">
+                                <h:outputLabel value="#{m.slanjePoruke_sadrzaj}" for="sadrzaj"/>
+                                <h:inputTextarea value="#{slanjePoruke.sadrzaj}" class="form-control" cols="60" rows="10" id="sadrzaj"/>
+                            </div>
+
+                            <div class="form-group">
+                                <h:commandButton value="#{m.slanjePoruke_salji}" action="#{slanjePoruke.saljiPoruku()}" class="btn btn-primary" />
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><b>#{m.slanjePoruke_akcije}</b></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="btn-toolbar">
+                                <h:commandLink value="#{m.slanjePoruke_promjena}" action="#{slanjePoruke.promjenaJezika()}" class="btn btn-default" role="button" />
+                                <h:commandLink value="#{m.slanjePoruke_pregled_poruka}" action="#{slanjePoruke.pregledPoruka()}" class="btn btn-default" role="button" />
+                            </div>
+                        </div>
+                    </div>
+                </h:form>
+
+                <div class="well">
+                    <p>	&reg; #{m.footer_text}</p>
+                </div>
+
+            </div>
+        </h:body>
+    </f:view>
+</html>
+

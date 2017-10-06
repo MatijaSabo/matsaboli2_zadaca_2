@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <f:view locale="#{lokalizator.odabraniJezik}">
+        <h:head>
+            <title>#{m.pregledPoruka_naslov}</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        </h:head>
+        <h:body>
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>#{m.header_naslov}</h1>
+                    <h3>#{m.header_opis}</h3>
+                    <h4>#{m.header_autor}</h4>
+                </div>
+                <h:form>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><b>#{m.pregledPoruka_akcije}</b></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="btn-toolbar">
+                                <h:commandLink value="#{m.pregledPoruka_promjenaJezika}" action="#{pregledPoruka.promjenaJezika()}" class="btn btn-default" role="button" />
+                                <h:commandLink value="#{m.pregledPoruka_slanjeEmailPoruka}" action="#{pregledPoruka.saljiPoruku()}" class="btn btn-default" role="button" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title"><b>#{m.pregledPoruka_naslov}</b></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h:outputLabel value="#{m.pregledPoruka_odaberiMapu}" for="mapa" />:
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <h:selectOneMenu value="#{pregledPoruka.odabranaMapa}" class="form-control"  >
+                                            <f:selectItems value="#{pregledPoruka.preuzeteMape}" 
+                                                           var="mape" 
+                                                           itemLabel="${mape.labela}" 
+                                                           itemValue="#{mape.vrijednost}" />
+                                        </h:selectOneMenu>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <h:commandButton value="#{m.pregledPoruka_gumbPromjeniMapu}" action="#{pregledPoruka.promjenaMape(true)}" class="btn btn-primary" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h:outputLabel value="#{m.pregledPoruka_trazi}" for="trazi" />:
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <h:inputText value="#{pregledPoruka.traziPoruku}" class="form-control" id="trazi" />
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <h:commandButton value="#{m.pregledPoruka_gumbTrazi}" action="#{pregledPoruka.filtrirajPoruke()}" class="btn btn-primary"  />
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <h:dataTable value="#{pregledPoruka.preuzetePoruke}" var="poruke" class="table table-hover">
+                                <h:column>
+                                    <f:facet name="header">#{m.pregledPoruka_id}</f:facet>
+                                    <h:outputText value="#{poruke.id}" />
+                                </h:column>
+
+                                <h:column>
+                                    <f:facet name="header">#{m.pregledPoruka_posiljatelj}</f:facet>
+                                    <h:outputText value="#{poruke.salje}" />
+                                </h:column>
+
+                                <h:column>
+                                    <f:facet name="header">#{m.pregledPoruka_predmet}</f:facet>
+                                    <h:outputText value="#{poruke.predmet}" />
+                                </h:column>
+
+                                <h:column>
+                                    <f:facet name="header">#{m.pregledPoruka_vrijeme}</f:facet>
+                                    <h:outputText value="#{poruke.vrijemeSlanja}">
+                                        <f:convertDateTime pattern="dd.MM.yyyy. hh:mm:ss.zzz" />
+                                    </h:outputText>
+                                </h:column>
+
+                                <h:column>
+                                    <f:facet name="header">#{m.pregledPoruka_sadržaj}</f:facet>
+                                    <h:outputText value="#{poruke.sadrzaj}" />
+                                </h:column>
+                            </h:dataTable>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h:outputText value="#{m.pregledPoruka_ukupnoPoruka}: " />
+                                    <h:outputText value="#{pregledPoruka.ukupnoPoruka}" />
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="btn-toolbar">
+                                        
+                                        <c:if test="#{pregledPoruka.ukupnoPoruka le pregledPoruka.brojPrikazanihPoruka or pregledPoruka.zavrsnaPozicija eq pregledPoruka.ukupnoPoruka}">
+                                            <h:commandButton value="#{m.pregledPoruka_gumbPrethodnePoruke}" action="#{pregledPoruka.prethodnePoruke(false)}" class="btn btn-default" disabled="true"/>
+                                        </c:if>
+                                        <c:if test="#{pregledPoruka.ukupnoPoruka gt pregledPoruka.brojPrikazanihPoruka and pregledPoruka.zavrsnaPozicija lt pregledPoruka.ukupnoPoruka}">
+                                            <h:commandButton value="#{m.pregledPoruka_gumbPrethodnePoruke}" action="#{pregledPoruka.prethodnePoruke(true)}" class="btn btn-default" />
+                                        </c:if>
+                                        
+                                        <c:if test="#{pregledPoruka.ukupnoPoruka le pregledPoruka.brojPrikazanihPoruka or pregledPoruka.pocetnaPozicija eq 1}">
+                                            <h:commandButton value="#{m.pregledPoruka_gumbSljedecePoruke}" action="#{pregledPoruka.sljedecePoruke(false)}" class="btn btn-default" disabled="true"/>
+                                        </c:if>
+                                        <c:if test="#{pregledPoruka.ukupnoPoruka gt pregledPoruka.brojPrikazanihPoruka and pregledPoruka.zavrsnaPozicija gt pregledPoruka.brojPrikazanihPoruka}">
+                                            <h:commandButton value="#{m.pregledPoruka_gumbSljedecePoruke}" action="#{pregledPoruka.sljedecePoruke(true)}" class="btn btn-default" />
+                                        </c:if>                 
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </h:form>
+
+                <div class="well">
+                    <p>	&reg; #{m.footer_text}</p>
+                </div>
+
+            </div>
+        </h:body>
+    </f:view>
+</html>
+
