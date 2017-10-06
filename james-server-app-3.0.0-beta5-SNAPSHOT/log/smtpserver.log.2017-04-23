@@ -1,0 +1,11 @@
+INFO  23:35:47,671 | james.smtpserver | SMTP Service bound to: 0.0.0.0:25
+INFO  23:35:47,679 | james.smtpserver | SMTP Service is running on: DESKTOP-72LDSOK
+INFO  23:35:47,680 | james.smtpserver | SMTP Service handler hello name is: DESKTOP-72LDSOK
+INFO  23:35:47,682 | james.smtpserver | SMTP Service handler connection timeout is: 360
+INFO  23:35:47,683 | james.smtpserver | SMTP Service connection backlog is: 200
+INFO  23:35:47,688 | james.smtpserver | This SMTP server requires authentication.
+INFO  23:35:47,693 | james.smtpserver | No maximum message size is enforced for this server.
+INFO  23:35:48,453 | james.smtpserver | Init SMTP Service done
+INFO  23:37:02,104 | james.smtpserver | Id='2742032' User='' Connection established from 127.0.0.1
+INFO  23:37:06,944 | james.smtpserver | Id='2742032' User='' Successfully spooled mail Mail1492983426827-9e353e49-7eea-482f-b009-fb29e92d6d65 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [marsrnec@nwtis.nastava.foi.hr]
+INFO  23:37:06,972 | james.smtpserver | Id='2742032' User='' Connection closed for 127.0.0.1

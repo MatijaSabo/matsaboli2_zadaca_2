@@ -1,0 +1,15 @@
+INFO  16:12:52,446 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  16:12:52,449 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  16:12:52,450 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  16:12:52,451 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  16:12:52,452 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  16:12:52,552 | james.pop3server | Init POP3 Service done
+INFO  16:12:52,711 | james.pop3server | Id='2661314' User='' Connection established from 127.0.0.1
+INFO  16:13:03,848 | james.pop3server | Id='1027111412' User='' Connection established from 127.0.0.1
+INFO  16:13:19,682 | james.pop3server | Id='2661314' User='servis@nwtis.nastava.foi.hr' Connection closed for 127.0.0.1
+INFO  16:13:19,684 | james.pop3server | Id='1027111412' User='servis@nwtis.nastava.foi.hr' Connection closed for 127.0.0.1
+INFO  16:13:21,983 | james.pop3server | Id='981900883' User='' Connection established from 127.0.0.1
+INFO  16:13:32,103 | james.pop3server | Id='1704995522' User='' Connection established from 127.0.0.1
+INFO  16:13:42,167 | james.pop3server | Id='1386960646' User='' Connection established from 127.0.0.1
+INFO  16:13:52,225 | james.pop3server | Id='1668009076' User='' Connection established from 127.0.0.1
+INFO  16:14:02,281 | james.pop3server | Id='421862610' User='' Connection established from 127.0.0.1

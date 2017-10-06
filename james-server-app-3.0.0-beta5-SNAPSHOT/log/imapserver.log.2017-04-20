@@ -1,0 +1,6 @@
+INFO  10:19:49,100 | james.imapserver | IMAP Service bound to: 0.0.0.0:143
+INFO  10:19:49,105 | james.imapserver | IMAP Service is running on: DESKTOP-72LDSOK
+INFO  10:19:49,106 | james.imapserver | IMAP Service handler hello name is: DESKTOP-72LDSOK
+INFO  10:19:49,107 | james.imapserver | IMAP Service handler connection timeout is: 300
+INFO  10:19:49,108 | james.imapserver | IMAP Service connection backlog is: 200
+INFO  10:19:49,115 | james.imapserver | Init IMAP Service done

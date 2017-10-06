@@ -1,0 +1,8 @@
+INFO  10:19:47,675 | james.smtpserver | SMTP Service bound to: 0.0.0.0:25
+INFO  10:19:47,683 | james.smtpserver | SMTP Service is running on: DESKTOP-72LDSOK
+INFO  10:19:47,684 | james.smtpserver | SMTP Service handler hello name is: DESKTOP-72LDSOK
+INFO  10:19:47,686 | james.smtpserver | SMTP Service handler connection timeout is: 360
+INFO  10:19:47,687 | james.smtpserver | SMTP Service connection backlog is: 200
+INFO  10:19:47,688 | james.smtpserver | This SMTP server requires authentication.
+INFO  10:19:47,692 | james.smtpserver | No maximum message size is enforced for this server.
+INFO  10:19:48,302 | james.smtpserver | Init SMTP Service done

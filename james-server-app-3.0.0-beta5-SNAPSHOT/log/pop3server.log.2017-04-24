@@ -1,0 +1,48 @@
+INFO  10:42:16,881 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  10:42:16,884 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  10:42:16,885 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  10:42:16,886 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  10:42:16,887 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  10:42:17,025 | james.pop3server | Init POP3 Service done
+INFO  12:43:55,404 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  12:43:55,406 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  12:43:55,435 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  12:43:55,437 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  12:43:55,437 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  12:43:55,523 | james.pop3server | Init POP3 Service done
+INFO  14:51:45,542 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  14:51:45,554 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  14:51:45,555 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  14:51:45,556 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  14:51:45,557 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  14:51:45,693 | james.pop3server | Init POP3 Service done
+INFO  15:33:04,619 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  15:33:04,621 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  15:33:04,621 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  15:33:04,624 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  15:33:04,625 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  15:33:04,746 | james.pop3server | Init POP3 Service done
+INFO  15:53:36,663 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  15:53:36,664 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  15:53:36,665 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  15:53:36,667 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  15:53:36,668 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  15:53:36,770 | james.pop3server | Init POP3 Service done
+INFO  16:52:17,392 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  16:52:17,393 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  16:52:17,393 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  16:52:17,394 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  16:52:17,394 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  16:52:17,477 | james.pop3server | Init POP3 Service done
+INFO  18:09:58,671 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  18:09:58,674 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  18:09:58,677 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  18:09:58,678 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  18:09:58,679 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  18:09:58,833 | james.pop3server | Init POP3 Service done
+INFO  20:39:55,919 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  20:39:55,940 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  20:39:55,941 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  20:39:55,941 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  20:39:55,942 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  20:39:56,053 | james.pop3server | Init POP3 Service done

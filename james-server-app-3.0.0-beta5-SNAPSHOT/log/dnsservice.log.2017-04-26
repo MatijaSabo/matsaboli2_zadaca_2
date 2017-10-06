@@ -1,0 +1,33 @@
+INFO  10:57:45,314 | james.dnsservice | Autodiscovery is enabled - trying to discover your system's DNS Servers
+INFO  10:57:45,337 | james.dnsservice | Adding autodiscovered server 192.168.14.44
+INFO  10:57:45,337 | james.dnsservice | Adding autodiscovered server 10.85.153.3
+INFO  10:57:45,338 | james.dnsservice | Adding autodiscovered server 10.85.153.4
+INFO  10:57:45,338 | james.dnsservice | Adding autodiscovered server 192.168.1.1
+INFO  10:57:45,339 | james.dnsservice | Adding autodiscovered search path Speedport_W_724V_09091602_00_006.
+INFO  10:57:45,340 | james.dnsservice | DNS Server is: 192.168.14.44
+INFO  10:57:45,341 | james.dnsservice | DNS Server is: 10.85.153.3
+INFO  10:57:45,341 | james.dnsservice | DNS Server is: 10.85.153.4
+INFO  10:57:45,341 | james.dnsservice | DNS Server is: 192.168.1.1
+INFO  10:57:45,503 | james.dnsservice | Registered cache, resolver and search paths as DNSJava defaults
+INFO  16:53:28,237 | james.dnsservice | Autodiscovery is enabled - trying to discover your system's DNS Servers
+INFO  16:53:28,268 | james.dnsservice | Adding autodiscovered server 192.168.14.44
+INFO  16:53:28,268 | james.dnsservice | Adding autodiscovered server 10.85.153.3
+INFO  16:53:28,268 | james.dnsservice | Adding autodiscovered server 10.85.153.4
+INFO  16:53:28,268 | james.dnsservice | Adding autodiscovered server 192.168.1.1
+INFO  16:53:28,268 | james.dnsservice | Adding autodiscovered search path Speedport_W_724V_09091601_00_039.
+INFO  16:53:28,268 | james.dnsservice | DNS Server is: 192.168.14.44
+INFO  16:53:28,268 | james.dnsservice | DNS Server is: 10.85.153.3
+INFO  16:53:28,268 | james.dnsservice | DNS Server is: 10.85.153.4
+INFO  16:53:28,268 | james.dnsservice | DNS Server is: 192.168.1.1
+INFO  16:53:28,422 | james.dnsservice | Registered cache, resolver and search paths as DNSJava defaults
+INFO  21:08:55,044 | james.dnsservice | Autodiscovery is enabled - trying to discover your system's DNS Servers
+INFO  21:08:55,103 | james.dnsservice | Adding autodiscovered server 192.168.14.44
+INFO  21:08:55,103 | james.dnsservice | Adding autodiscovered server 10.85.153.3
+INFO  21:08:55,103 | james.dnsservice | Adding autodiscovered server 10.85.153.4
+INFO  21:08:55,103 | james.dnsservice | Adding autodiscovered server 192.168.1.1
+INFO  21:08:55,103 | james.dnsservice | Adding autodiscovered search path Speedport_W_724V_09091601_00_039.
+INFO  21:08:55,103 | james.dnsservice | DNS Server is: 192.168.14.44
+INFO  21:08:55,103 | james.dnsservice | DNS Server is: 10.85.153.3
+INFO  21:08:55,103 | james.dnsservice | DNS Server is: 10.85.153.4
+INFO  21:08:55,103 | james.dnsservice | DNS Server is: 192.168.1.1
+INFO  21:08:55,320 | james.dnsservice | Registered cache, resolver and search paths as DNSJava defaults

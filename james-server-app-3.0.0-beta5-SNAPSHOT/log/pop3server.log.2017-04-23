@@ -1,0 +1,27 @@
+INFO  23:35:48,493 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  23:35:48,497 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  23:35:48,499 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  23:35:48,500 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  23:35:48,501 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  23:35:48,699 | james.pop3server | Init POP3 Service done
+INFO  23:35:49,124 | james.pop3server | Id='680087534' User='' Connection established from 127.0.0.1
+INFO  23:36:00,201 | james.pop3server | Id='1274575197' User='' Connection established from 127.0.0.1
+INFO  23:36:03,996 | james.pop3server | Id='1274575197' User='servis@nwtis.nastava.foi.hr' Connection closed for 127.0.0.1
+INFO  23:36:04,003 | james.pop3server | Id='680087534' User='servis@nwtis.nastava.foi.hr' Connection closed for 127.0.0.1
+INFO  23:36:06,178 | james.pop3server | Id='742788935' User='' Connection established from 127.0.0.1
+INFO  23:36:16,280 | james.pop3server | Id='2130971807' User='' Connection established from 127.0.0.1
+INFO  23:36:26,358 | james.pop3server | Id='576269132' User='' Connection established from 127.0.0.1
+INFO  23:36:36,417 | james.pop3server | Id='1756437878' User='' Connection established from 127.0.0.1
+INFO  23:36:46,473 | james.pop3server | Id='547815196' User='' Connection established from 127.0.0.1
+INFO  23:36:56,524 | james.pop3server | Id='318487922' User='' Connection established from 127.0.0.1
+INFO  23:37:06,576 | james.pop3server | Id='1403513827' User='' Connection established from 127.0.0.1
+INFO  23:37:16,649 | james.pop3server | Id='1864766853' User='' Connection established from 127.0.0.1
+INFO  23:37:26,709 | james.pop3server | Id='529407664' User='' Connection established from 127.0.0.1
+INFO  23:37:36,760 | james.pop3server | Id='1407291416' User='' Connection established from 127.0.0.1
+INFO  23:37:46,820 | james.pop3server | Id='1373904350' User='' Connection established from 127.0.0.1
+INFO  23:37:56,858 | james.pop3server | Id='332124591' User='' Connection established from 127.0.0.1
+INFO  23:38:06,888 | james.pop3server | Id='1526769547' User='' Connection established from 127.0.0.1
+INFO  23:38:16,955 | james.pop3server | Id='1976978222' User='' Connection established from 127.0.0.1
+INFO  23:38:27,006 | james.pop3server | Id='1536212948' User='' Connection established from 127.0.0.1
+INFO  23:38:37,054 | james.pop3server | Id='1237970539' User='' Connection established from 127.0.0.1
+INFO  23:38:47,101 | james.pop3server | Id='33362914' User='' Connection established from 127.0.0.1

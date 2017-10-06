@@ -1,0 +1,38 @@
+INFO  08:11:29,528 | james.smtpserver | SMTP Service bound to: 0.0.0.0:25
+INFO  08:11:29,539 | james.smtpserver | SMTP Service is running on: DESKTOP-72LDSOK
+INFO  08:11:29,540 | james.smtpserver | SMTP Service handler hello name is: DESKTOP-72LDSOK
+INFO  08:11:29,542 | james.smtpserver | SMTP Service handler connection timeout is: 360
+INFO  08:11:29,544 | james.smtpserver | SMTP Service connection backlog is: 200
+INFO  08:11:29,546 | james.smtpserver | This SMTP server requires authentication.
+INFO  08:11:29,549 | james.smtpserver | No maximum message size is enforced for this server.
+INFO  08:11:30,398 | james.smtpserver | Init SMTP Service done
+INFO  08:16:00,621 | james.smtpserver | Id='69815357' User='' Connection established from 127.0.0.1
+INFO  08:16:05,418 | james.smtpserver | Id='69815357' User='' Successfully spooled mail Mail1493446565309-0b8d0de7-b0e9-46d6-970c-05fb8d78edea from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:16:05,449 | james.smtpserver | Id='69815357' User='' Connection closed for 127.0.0.1
+INFO  08:17:05,313 | james.smtpserver | Id='1548333054' User='' Connection established from 127.0.0.1
+INFO  08:17:09,896 | james.smtpserver | Id='1548333054' User='' Successfully spooled mail Mail1493446629877-ae0110cb-dd82-4cd7-9730-d1ea5126b660 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:17:09,919 | james.smtpserver | Id='1548333054' User='' Connection closed for 127.0.0.1
+INFO  08:17:24,084 | james.smtpserver | Id='625635382' User='' Connection established from 127.0.0.1
+INFO  08:17:28,634 | james.smtpserver | Id='625635382' User='' Successfully spooled mail Mail1493446648617-638ee597-45d2-454f-93b1-5c52fce42373 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:17:28,654 | james.smtpserver | Id='625635382' User='' Connection closed for 127.0.0.1
+INFO  08:17:37,421 | james.smtpserver | Id='136742637' User='' Connection established from 127.0.0.1
+INFO  08:17:41,990 | james.smtpserver | Id='136742637' User='' Successfully spooled mail Mail1493446661966-ee5865f0-dade-4e23-a838-c88544911360 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:17:42,042 | james.smtpserver | Id='136742637' User='' Connection closed for 127.0.0.1
+INFO  08:17:49,516 | james.smtpserver | Id='1313107389' User='' Connection established from 127.0.0.1
+INFO  08:17:54,066 | james.smtpserver | Id='1313107389' User='' Successfully spooled mail Mail1493446674050-1b21bbde-ef66-44f2-bb84-05ba10ba4444 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:17:54,079 | james.smtpserver | Id='1313107389' User='' Connection closed for 127.0.0.1
+INFO  08:18:02,551 | james.smtpserver | Id='774992102' User='' Connection established from 127.0.0.1
+INFO  08:18:07,105 | james.smtpserver | Id='774992102' User='' Successfully spooled mail Mail1493446687088-e925b3d2-81f6-4f38-a567-15c5903f387f from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:18:07,114 | james.smtpserver | Id='774992102' User='' Connection closed for 127.0.0.1
+INFO  08:18:16,102 | james.smtpserver | Id='813035691' User='' Connection established from 127.0.0.1
+INFO  08:18:17,013 | james.smtpserver | Id='1675744326' User='' Connection established from 127.0.0.1
+INFO  08:18:20,653 | james.smtpserver | Id='813035691' User='' Successfully spooled mail Mail1493446700632-8b10470a-d892-441b-b0be-37921edcf3d3 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:18:20,661 | james.smtpserver | Id='813035691' User='' Connection closed for 127.0.0.1
+INFO  08:18:21,564 | james.smtpserver | Id='1675744326' User='' Successfully spooled mail Mail1493446701545-f09a15cb-33ab-4c96-969d-df9bf47d5b95 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:18:21,572 | james.smtpserver | Id='1675744326' User='' Connection closed for 127.0.0.1
+INFO  08:19:14,952 | james.smtpserver | Id='2082835946' User='' Connection established from 127.0.0.1
+INFO  08:19:19,526 | james.smtpserver | Id='2082835946' User='' Successfully spooled mail Mail1493446759504-f8555e22-5bf6-4cb7-b7c9-849169e36833 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:19:19,536 | james.smtpserver | Id='2082835946' User='' Connection closed for 127.0.0.1
+INFO  08:20:18,915 | james.smtpserver | Id='1962268678' User='' Connection established from 127.0.0.1
+INFO  08:20:23,444 | james.smtpserver | Id='1962268678' User='' Successfully spooled mail Mail1493446823444-e48ddde7-454d-4cea-b8d8-909b3f0f8db7 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:20:23,465 | james.smtpserver | Id='1962268678' User='' Connection closed for 127.0.0.1

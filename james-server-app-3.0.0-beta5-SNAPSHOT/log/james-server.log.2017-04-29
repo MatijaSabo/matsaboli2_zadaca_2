@@ -1,0 +1,257 @@
+INFO  08:10:45,893 | org.apache.james.container.spring.context.JamesServerApplicationContext | Refreshing org.apache.james.container.spring.context.JamesServerApplicationContext@32e6e9c3: startup date [Sat Apr 29 08:10:45 CEST 2017]; root of context hierarchy
+INFO  08:11:04,237 | org.apache.james.container.spring.context.JamesServerApplicationContext | Bean 'logprovider' of type [class org.apache.james.container.spring.lifecycle.LogProviderImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  08:11:04,442 | james.mailrepositorystore | JamesMailStore init...
+INFO  08:11:04,542 | james.mailrepositorystore | Registering Repository instance of class org.apache.james.mailrepository.file.FileMailRepository to handle file protocol requests for repositories with key file
+INFO  08:11:04,542 | james.mailrepositorystore | Registering Repository instance of class org.apache.james.mailrepository.jdbc.JDBCMailRepository to handle db protocol requests for repositories with key db
+INFO  08:11:04,542 | james.mailrepositorystore | Registering Repository instance of class org.apache.james.mailrepository.jdbc.JDBCMailRepository to handle dbfile protocol requests for repositories with key dbfile
+INFO  08:11:04,559 | james.mailrepositorystore | Registering Repository instance of class org.apache.james.mailrepository.file.MBoxMailRepository to handle mbox protocol requests for repositories with key mbox
+INFO  08:11:04,847 | james.dnsservice | Autodiscovery is enabled - trying to discover your system's DNS Servers
+INFO  08:11:04,911 | james.dnsservice | Adding autodiscovered server 192.168.14.44
+INFO  08:11:04,911 | james.dnsservice | Adding autodiscovered server 10.85.153.3
+INFO  08:11:04,912 | james.dnsservice | Adding autodiscovered server 10.85.153.4
+INFO  08:11:04,913 | james.dnsservice | Adding autodiscovered server 192.168.1.1
+INFO  08:11:04,913 | james.dnsservice | Adding autodiscovered search path Speedport_W_724V_09091601_00_039.
+INFO  08:11:04,915 | james.dnsservice | DNS Server is: 192.168.14.44
+INFO  08:11:04,916 | james.dnsservice | DNS Server is: 10.85.153.3
+INFO  08:11:04,916 | james.dnsservice | DNS Server is: 10.85.153.4
+INFO  08:11:04,916 | james.dnsservice | DNS Server is: 192.168.1.1
+INFO  08:11:04,931 | james.dnsservice | Registered cache, resolver and search paths as DNSJava defaults
+INFO  08:11:11,168 | james.domainlist | Set autodetect to: true
+INFO  08:11:11,168 | james.domainlist | Set autodetectIP to: true
+WARN  08:11:18,658 | org.apache.activemq.store.amq.AMQPersistenceAdapter | The ReferenceStore is not valid - recovering ...
+INFO  08:11:24,477 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:24,555 | james.mailprocessor | Mailet PostmasterAlias instantiated.
+INFO  08:11:24,561 | james.mailprocessor | Matcher RelayLimit=30 instantiated.
+INFO  08:11:24,577 | james.mailprocessor | Mailet Null instantiated.
+INFO  08:11:24,593 | james.mailprocessor | Matcher SMTPAuthSuccessful instantiated.
+INFO  08:11:24,624 | james.mailprocessor | Mailet ToProcessor instantiated.
+INFO  08:11:24,624 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:24,624 | james.mailprocessor | Mailet ToProcessor instantiated.
+INFO  08:11:25,993 | james.mailprocessor | Matcher SMTPAuthSuccessful instantiated.
+INFO  08:11:26,017 | james.mailprocessor | Mailet SetMimeHeader instantiated.
+INFO  08:11:26,039 | james.mailprocessor | Matcher RecipientIsLocal instantiated.
+INFO  08:11:26,057 | james.mailprocessor | Mailet RecipientToLowerCase instantiated.
+INFO  08:11:26,059 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:26,124 | james.mailprocessor | Mailet RecipientRewriteTable instantiated.
+INFO  08:11:26,131 | james.mailprocessor | Matcher RecipientIsLocal instantiated.
+INFO  08:11:26,497 | james.mailprocessor | Mailet LocalDelivery instantiated.
+INFO  08:11:26,532 | james.mailprocessor | Matcher HostIsLocal instantiated.
+INFO  08:11:26,536 | james.mailprocessor | Mailet ToProcessor instantiated.
+INFO  08:11:26,539 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:26,631 | james.mailetcontext | maxRetries is larger than total number of attempts specified.  Increasing last delayTime with 19 attempts 
+INFO  08:11:26,632 | james.mailetcontext | Delay of 21600000 msecs is now attempted: 20 times
+INFO  08:11:26,668 | james.mailprocessor | Mailet RemoteDelivery instantiated.
+INFO  08:11:27,951 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:28,013 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentObjectRepository Store
+INFO  08:11:28,019 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentObjectRepository opened in ..\var\mail\error
+INFO  08:11:28,023 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentStreamRepository Store
+INFO  08:11:28,025 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentStreamRepository opened in ..\var\mail\error
+INFO  08:11:28,029 | james.mailrepositorystore | added repository: file://var/mail/error/->org.apache.james.mailrepository.file.FileMailRepository
+INFO  08:11:28,033 | james.mailprocessor | Mailet ToRepository instantiated.
+INFO  08:11:28,264 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:28,270 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentObjectRepository Store
+INFO  08:11:28,273 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentObjectRepository opened in ..\var\mail\spam
+INFO  08:11:28,275 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentStreamRepository Store
+INFO  08:11:28,276 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentStreamRepository opened in ..\var\mail\spam
+INFO  08:11:28,280 | james.mailrepositorystore | added repository: file://var/mail/spam/->org.apache.james.mailrepository.file.FileMailRepository
+INFO  08:11:28,284 | james.mailprocessor | Mailet ToRepository instantiated.
+INFO  08:11:28,489 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:28,494 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentObjectRepository Store
+INFO  08:11:28,499 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentObjectRepository opened in ..\var\mail\address-error
+INFO  08:11:28,501 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentStreamRepository Store
+INFO  08:11:28,502 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentStreamRepository opened in ..\var\mail\address-error
+INFO  08:11:28,505 | james.mailrepositorystore | added repository: file://var/mail/address-error/->org.apache.james.mailrepository.file.FileMailRepository
+INFO  08:11:28,506 | james.mailprocessor | Mailet ToRepository instantiated.
+INFO  08:11:28,719 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:28,725 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentObjectRepository Store
+INFO  08:11:28,729 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentObjectRepository opened in ..\var\mail\relay-denied
+INFO  08:11:28,730 | james.mailrepositorystore | Init org.apache.james.repository.file.FilePersistentStreamRepository Store
+INFO  08:11:28,732 | james.mailrepositorystore | org.apache.james.repository.file.FilePersistentStreamRepository opened in ..\var\mail\relay-denied
+INFO  08:11:28,735 | james.mailrepositorystore | added repository: file://var/mail/relay-denied/->org.apache.james.mailrepository.file.FileMailRepository
+INFO  08:11:28,736 | james.mailprocessor | Mailet ToRepository instantiated.
+INFO  08:11:28,982 | james.mailprocessor | Matcher All instantiated.
+INFO  08:11:29,097 | james.mailprocessor | Mailet DSNBounce instantiated.
+INFO  08:11:29,310 | james.mailspooler | org.apache.james.mailetcontainer.impl.JamesMailSpooler init...
+INFO  08:11:29,311 | james.mailspooler | org.apache.james.mailetcontainer.impl.JamesMailSpooler uses 20 Thread(s)
+INFO  08:11:29,364 | james.mailspooler | Run org.apache.james.mailetcontainer.impl.JamesMailSpooler: dequeuer-1
+INFO  08:11:29,367 | james.mailspooler | Queue=MailQueue:spool
+INFO  08:11:29,364 | james.mailspooler | Run org.apache.james.mailetcontainer.impl.JamesMailSpooler: dequeuer-2
+INFO  08:11:29,372 | james.mailspooler | Queue=MailQueue:spool
+INFO  08:11:29,401 | james.fetchmail | FetchMail Disabled
+INFO  08:11:29,528 | james.smtpserver | SMTP Service bound to: 0.0.0.0:25
+INFO  08:11:29,539 | james.smtpserver | SMTP Service is running on: DESKTOP-72LDSOK
+INFO  08:11:29,540 | james.smtpserver | SMTP Service handler hello name is: DESKTOP-72LDSOK
+INFO  08:11:29,542 | james.smtpserver | SMTP Service handler connection timeout is: 360
+INFO  08:11:29,544 | james.smtpserver | SMTP Service connection backlog is: 200
+INFO  08:11:29,546 | james.smtpserver | This SMTP server requires authentication.
+INFO  08:11:29,549 | james.smtpserver | No maximum message size is enforced for this server.
+INFO  08:11:30,398 | james.smtpserver | Init SMTP Service done
+INFO  08:11:30,419 | james.lmtpserver | LMTP Service disabled by configuration
+INFO  08:11:30,440 | james.pop3server | POP3 Service bound to: 0.0.0.0:110
+INFO  08:11:30,445 | james.pop3server | POP3 Service is running on: DESKTOP-72LDSOK
+INFO  08:11:30,449 | james.pop3server | POP3 Service handler hello name is: DESKTOP-72LDSOK
+INFO  08:11:30,452 | james.pop3server | POP3 Service handler connection timeout is: 1200
+INFO  08:11:30,453 | james.pop3server | POP3 Service connection backlog is: 200
+INFO  08:11:30,623 | james.pop3server | Init POP3 Service done
+INFO  08:11:31,333 | james.imapserver | IMAP Service bound to: 0.0.0.0:143
+INFO  08:11:31,337 | james.imapserver | IMAP Service is running on: DESKTOP-72LDSOK
+INFO  08:11:31,339 | james.imapserver | IMAP Service handler hello name is: DESKTOP-72LDSOK
+INFO  08:11:31,340 | james.imapserver | IMAP Service handler connection timeout is: 300
+INFO  08:11:31,342 | james.imapserver | IMAP Service connection backlog is: 200
+INFO  08:11:31,350 | james.imapserver | Init IMAP Service done
+INFO  08:11:33,054 | org.apache.james.app.spring.JamesAppSpringMain | Apache James Server is successfully started in 47983 milliseconds.
+INFO  08:15:43,180 | james.imapserver | ID=1722254272 Connection established from 127.0.0.1
+INFO  08:15:51,970 | james.imapserver | ID=1722254272 Connection closed for 127.0.0.1
+INFO  08:15:59,506 | james.imapserver | ID=1828517682 Connection established from 127.0.0.1
+INFO  08:15:59,934 | james.imapserver | ID=1828517682 Connection closed for 127.0.0.1
+INFO  08:16:00,621 | james.smtpserver | Id='69815357' User='' Connection established from 127.0.0.1
+INFO  08:16:05,418 | james.smtpserver | Id='69815357' User='' Successfully spooled mail Mail1493446565309-0b8d0de7-b0e9-46d6-970c-05fb8d78edea from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:16:05,449 | james.smtpserver | Id='69815357' User='' Connection closed for 127.0.0.1
+INFO  08:16:06,938 | james.mailetcontext | Local delivered mail Mail1493446565309-0b8d0de7-b0e9-46d6-970c-05fb8d78edea sucessfully from matsaboli2@nwtis.nastava.foi.hr to admin@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:17:04,993 | james.imapserver | ID=171372860 Connection established from 127.0.0.1
+INFO  08:17:05,297 | james.imapserver | ID=171372860 Connection closed for 127.0.0.1
+INFO  08:17:05,313 | james.smtpserver | Id='1548333054' User='' Connection established from 127.0.0.1
+INFO  08:17:09,896 | james.smtpserver | Id='1548333054' User='' Successfully spooled mail Mail1493446629877-ae0110cb-dd82-4cd7-9730-d1ea5126b660 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:17:09,919 | james.smtpserver | Id='1548333054' User='' Connection closed for 127.0.0.1
+INFO  08:17:10,193 | james.mailetcontext | Local delivered mail Mail1493446629877-ae0110cb-dd82-4cd7-9730-d1ea5126b660 sucessfully from matsaboli2@nwtis.nastava.foi.hr to admin@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:17:24,084 | james.smtpserver | Id='625635382' User='' Connection established from 127.0.0.1
+INFO  08:17:28,634 | james.smtpserver | Id='625635382' User='' Successfully spooled mail Mail1493446648617-638ee597-45d2-454f-93b1-5c52fce42373 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:17:28,654 | james.smtpserver | Id='625635382' User='' Connection closed for 127.0.0.1
+INFO  08:17:29,104 | james.mailetcontext | Local delivered mail Mail1493446648617-638ee597-45d2-454f-93b1-5c52fce42373 sucessfully from matsaboli2@nwtis.nastava.foi.hr to servis@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:17:37,421 | james.smtpserver | Id='136742637' User='' Connection established from 127.0.0.1
+INFO  08:17:41,990 | james.smtpserver | Id='136742637' User='' Successfully spooled mail Mail1493446661966-ee5865f0-dade-4e23-a838-c88544911360 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:17:42,042 | james.smtpserver | Id='136742637' User='' Connection closed for 127.0.0.1
+INFO  08:17:42,449 | james.mailetcontext | Local delivered mail Mail1493446661966-ee5865f0-dade-4e23-a838-c88544911360 sucessfully from matsaboli2@nwtis.nastava.foi.hr to servis@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:17:49,516 | james.smtpserver | Id='1313107389' User='' Connection established from 127.0.0.1
+INFO  08:17:54,066 | james.smtpserver | Id='1313107389' User='' Successfully spooled mail Mail1493446674050-1b21bbde-ef66-44f2-bb84-05ba10ba4444 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:17:54,079 | james.smtpserver | Id='1313107389' User='' Connection closed for 127.0.0.1
+INFO  08:17:54,461 | james.mailetcontext | Local delivered mail Mail1493446674050-1b21bbde-ef66-44f2-bb84-05ba10ba4444 sucessfully from matsaboli2@nwtis.nastava.foi.hr to servis@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:18:02,551 | james.smtpserver | Id='774992102' User='' Connection established from 127.0.0.1
+INFO  08:18:07,105 | james.smtpserver | Id='774992102' User='' Successfully spooled mail Mail1493446687088-e925b3d2-81f6-4f38-a567-15c5903f387f from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:18:07,114 | james.smtpserver | Id='774992102' User='' Connection closed for 127.0.0.1
+INFO  08:18:07,391 | james.mailetcontext | Local delivered mail Mail1493446687088-e925b3d2-81f6-4f38-a567-15c5903f387f sucessfully from matsaboli2@nwtis.nastava.foi.hr to servis@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:18:09,606 | james.imapserver | ID=265063347 Connection established from 127.0.0.1
+INFO  08:18:12,118 | james.imapserver | ID=357418914 Connection established from 127.0.0.1
+INFO  08:18:13,813 | james.imapserver | ID=1838776839 Connection established from 127.0.0.1
+INFO  08:18:14,603 | james.imapserver | ID=814933477 Connection established from 127.0.0.1
+INFO  08:18:15,422 | james.imapserver | ID=151600288 Connection established from 127.0.0.1
+INFO  08:18:16,073 | james.imapserver | ID=265063347 Connection closed for 127.0.0.1
+INFO  08:18:16,078 | james.imapserver | ID=1838776839 Connection closed for 127.0.0.1
+INFO  08:18:16,082 | james.imapserver | ID=814933477 Connection closed for 127.0.0.1
+INFO  08:18:16,084 | james.imapserver | ID=151600288 Connection closed for 127.0.0.1
+INFO  08:18:16,090 | james.imapserver | ID=357418914 Connection closed for 127.0.0.1
+INFO  08:18:16,102 | james.smtpserver | Id='813035691' User='' Connection established from 127.0.0.1
+INFO  08:18:17,013 | james.smtpserver | Id='1675744326' User='' Connection established from 127.0.0.1
+INFO  08:18:20,653 | james.smtpserver | Id='813035691' User='' Successfully spooled mail Mail1493446700632-8b10470a-d892-441b-b0be-37921edcf3d3 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:18:20,661 | james.smtpserver | Id='813035691' User='' Connection closed for 127.0.0.1
+INFO  08:18:20,824 | james.mailetcontext | Local delivered mail Mail1493446700632-8b10470a-d892-441b-b0be-37921edcf3d3 sucessfully from matsaboli2@nwtis.nastava.foi.hr to admin@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:18:21,564 | james.smtpserver | Id='1675744326' User='' Successfully spooled mail Mail1493446701545-f09a15cb-33ab-4c96-969d-df9bf47d5b95 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [servis@nwtis.nastava.foi.hr]
+INFO  08:18:21,572 | james.smtpserver | Id='1675744326' User='' Connection closed for 127.0.0.1
+INFO  08:18:21,864 | james.mailetcontext | Local delivered mail Mail1493446701545-f09a15cb-33ab-4c96-969d-df9bf47d5b95 sucessfully from matsaboli2@nwtis.nastava.foi.hr to servis@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:18:24,516 | james.imapserver | ID=2096127203 Connection established from 127.0.0.1
+INFO  08:18:25,300 | james.imapserver | ID=135724998 Connection established from 127.0.0.1
+INFO  08:18:25,582 | james.imapserver | ID=135724998 Connection closed for 127.0.0.1
+INFO  08:18:35,535 | james.imapserver | ID=2090642660 Connection established from 127.0.0.1
+INFO  08:18:36,166 | james.imapserver | ID=458250388 Connection established from 127.0.0.1
+INFO  08:18:36,389 | james.imapserver | ID=458250388 Connection closed for 127.0.0.1
+INFO  08:18:36,440 | james.imapserver | ID=798105794 Connection established from 127.0.0.1
+INFO  08:18:36,624 | james.imapserver | ID=702481368 Connection established from 127.0.0.1
+INFO  08:18:37,524 | james.imapserver | ID=702481368 Connection closed for 127.0.0.1
+INFO  08:18:47,471 | james.imapserver | ID=599407542 Connection established from 127.0.0.1
+INFO  08:18:47,959 | james.imapserver | ID=1360440317 Connection established from 127.0.0.1
+INFO  08:18:49,041 | james.imapserver | ID=1360440317 Connection closed for 127.0.0.1
+INFO  08:18:49,090 | james.imapserver | ID=980258615 Connection established from 127.0.0.1
+INFO  08:18:49,163 | james.imapserver | ID=1807536969 Connection established from 127.0.0.1
+INFO  08:18:49,493 | james.imapserver | ID=1807536969 Connection closed for 127.0.0.1
+INFO  08:19:11,488 | james.imapserver | ID=923614292 Connection established from 127.0.0.1
+INFO  08:19:11,950 | james.imapserver | ID=654562342 Connection established from 127.0.0.1
+INFO  08:19:12,146 | james.imapserver | ID=654562342 Connection closed for 127.0.0.1
+INFO  08:19:12,175 | james.imapserver | ID=602600708 Connection established from 127.0.0.1
+INFO  08:19:12,251 | james.imapserver | ID=350359772 Connection established from 127.0.0.1
+INFO  08:19:12,387 | james.imapserver | ID=350359772 Connection closed for 127.0.0.1
+INFO  08:19:14,177 | james.imapserver | ID=1105572605 Connection established from 127.0.0.1
+INFO  08:19:14,245 | james.imapserver | ID=570852811 Connection established from 127.0.0.1
+INFO  08:19:14,936 | james.imapserver | ID=1105572605 Connection closed for 127.0.0.1
+INFO  08:19:14,936 | james.imapserver | ID=570852811 Connection closed for 127.0.0.1
+INFO  08:19:14,952 | james.smtpserver | Id='2082835946' User='' Connection established from 127.0.0.1
+INFO  08:19:16,603 | james.imapserver | ID=1652286565 Connection established from 127.0.0.1
+INFO  08:19:17,025 | james.imapserver | ID=1646006750 Connection established from 127.0.0.1
+INFO  08:19:17,144 | james.imapserver | ID=1646006750 Connection closed for 127.0.0.1
+INFO  08:19:17,172 | james.imapserver | ID=2144612673 Connection established from 127.0.0.1
+INFO  08:19:17,210 | james.imapserver | ID=517452890 Connection established from 127.0.0.1
+INFO  08:19:17,332 | james.imapserver | ID=517452890 Connection closed for 127.0.0.1
+INFO  08:19:19,526 | james.smtpserver | Id='2082835946' User='' Successfully spooled mail Mail1493446759504-f8555e22-5bf6-4cb7-b7c9-849169e36833 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:19:19,536 | james.smtpserver | Id='2082835946' User='' Connection closed for 127.0.0.1
+INFO  08:19:19,774 | james.mailetcontext | Local delivered mail Mail1493446759504-f8555e22-5bf6-4cb7-b7c9-849169e36833 sucessfully from matsaboli2@nwtis.nastava.foi.hr to admin@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:19:22,394 | james.imapserver | ID=264555315 Connection established from 127.0.0.1
+INFO  08:19:22,810 | james.imapserver | ID=248549908 Connection established from 127.0.0.1
+INFO  08:19:23,030 | james.imapserver | ID=248549908 Connection closed for 127.0.0.1
+INFO  08:19:23,052 | james.imapserver | ID=1399266233 Connection established from 127.0.0.1
+INFO  08:19:23,219 | james.imapserver | ID=1074171494 Connection established from 127.0.0.1
+INFO  08:19:24,001 | james.imapserver | ID=1074171494 Connection closed for 127.0.0.1
+INFO  08:19:24,420 | james.imapserver | ID=2144612673 Connection closed for 127.0.0.1
+INFO  08:19:24,482 | james.imapserver | ID=980258615 Connection closed for 127.0.0.1
+INFO  08:19:24,482 | james.imapserver | ID=923614292 Connection closed for 127.0.0.1
+INFO  08:19:24,481 | james.imapserver | ID=599407542 Connection closed for 127.0.0.1
+INFO  08:19:24,480 | james.imapserver | ID=602600708 Connection closed for 127.0.0.1
+INFO  08:19:24,480 | james.imapserver | ID=798105794 Connection closed for 127.0.0.1
+INFO  08:19:24,462 | james.imapserver | ID=2096127203 Connection closed for 127.0.0.1
+INFO  08:19:24,457 | james.imapserver | ID=2090642660 Connection closed for 127.0.0.1
+INFO  08:19:24,447 | james.imapserver | ID=1652286565 Connection closed for 127.0.0.1
+INFO  08:19:24,437 | james.imapserver | ID=264555315 Connection closed for 127.0.0.1
+INFO  08:19:24,425 | james.imapserver | ID=1399266233 Connection closed for 127.0.0.1
+INFO  08:19:29,037 | james.imapserver | ID=1337245249 Connection established from 127.0.0.1
+INFO  08:19:29,517 | james.imapserver | ID=377235732 Connection established from 127.0.0.1
+INFO  08:19:30,049 | james.imapserver | ID=377235732 Connection closed for 127.0.0.1
+INFO  08:19:30,074 | james.imapserver | ID=1990347745 Connection established from 127.0.0.1
+INFO  08:19:30,325 | james.imapserver | ID=207984681 Connection established from 127.0.0.1
+INFO  08:19:31,151 | james.imapserver | ID=207984681 Connection closed for 127.0.0.1
+INFO  08:19:36,555 | james.imapserver | ID=23028152 Connection established from 127.0.0.1
+INFO  08:19:36,976 | james.imapserver | ID=1801537260 Connection established from 127.0.0.1
+INFO  08:19:37,586 | james.imapserver | ID=1801537260 Connection closed for 127.0.0.1
+INFO  08:19:37,597 | james.imapserver | ID=1111598949 Connection established from 127.0.0.1
+INFO  08:19:38,068 | james.imapserver | ID=1111598949 Connection closed for 127.0.0.1
+INFO  08:20:18,768 | james.imapserver | ID=1101666030 Connection established from 127.0.0.1
+INFO  08:20:18,902 | james.imapserver | ID=1101666030 Connection closed for 127.0.0.1
+INFO  08:20:18,915 | james.smtpserver | Id='1962268678' User='' Connection established from 127.0.0.1
+INFO  08:20:23,444 | james.smtpserver | Id='1962268678' User='' Successfully spooled mail Mail1493446823444-e48ddde7-454d-4cea-b8d8-909b3f0f8db7 from matsaboli2@nwtis.nastava.foi.hr on 127.0.0.1/127.0.0.1 for [admin@nwtis.nastava.foi.hr]
+INFO  08:20:23,465 | james.smtpserver | Id='1962268678' User='' Connection closed for 127.0.0.1
+INFO  08:20:24,293 | james.mailetcontext | Local delivered mail Mail1493446823444-e48ddde7-454d-4cea-b8d8-909b3f0f8db7 sucessfully from matsaboli2@nwtis.nastava.foi.hr to admin@nwtis.nastava.foi.hr in folder INBOX
+INFO  08:21:04,840 | james.imapserver | ID=1337245249 Connection closed for 127.0.0.1
+INFO  08:21:05,099 | james.imapserver | ID=1990347745 Connection closed for 127.0.0.1
+INFO  08:21:05,104 | james.imapserver | ID=23028152 Connection closed for 127.0.0.1
+INFO  08:21:11,073 | james.imapserver | ID=936942976 Connection established from 127.0.0.1
+INFO  08:21:11,196 | james.imapserver | ID=936942976 Connection closed for 127.0.0.1
+INFO  08:22:00,837 | james.imapserver | ID=1143164663 Connection established from 127.0.0.1
+INFO  08:22:00,946 | james.imapserver | ID=1143164663 Connection closed for 127.0.0.1
+INFO  08:22:07,580 | james.imapserver | ID=881345239 Connection established from 127.0.0.1
+INFO  08:22:07,679 | james.imapserver | ID=881345239 Connection closed for 127.0.0.1
+INFO  08:22:50,985 | james.imapserver | ID=604339136 Connection established from 127.0.0.1
+INFO  08:22:51,276 | james.imapserver | ID=604339136 Connection closed for 127.0.0.1
+INFO  08:22:58,167 | james.imapserver | ID=2042225844 Connection established from 127.0.0.1
+INFO  08:22:58,456 | james.imapserver | ID=1620112377 Connection established from 127.0.0.1
+INFO  08:23:02,300 | james.imapserver | ID=1620112377 Unable to uid for unseen message 135 in mailbox #private:admin@nwtis.nastava.foi.hr:INBOX
+INFO  08:23:40,864 | james.imapserver | ID=171189534 Connection established from 127.0.0.1
+INFO  08:23:40,963 | james.imapserver | ID=523323856 Connection established from 127.0.0.1
+INFO  08:23:42,174 | james.imapserver | ID=523323856 Unable to uid for unseen message 135 in mailbox #private:admin@nwtis.nastava.foi.hr:INBOX
+INFO  08:23:50,968 | james.imapserver | ID=858303883 Connection established from 127.0.0.1
+INFO  08:23:51,451 | james.imapserver | ID=858303883 Connection closed for 127.0.0.1
+INFO  08:23:54,703 | james.imapserver | ID=1942476467 Connection established from 127.0.0.1
+INFO  08:23:54,863 | james.imapserver | ID=871260505 Connection established from 127.0.0.1
+INFO  08:23:56,157 | james.imapserver | ID=871260505 Unable to uid for unseen message 135 in mailbox #private:admin@nwtis.nastava.foi.hr:INBOX
+INFO  08:23:57,380 | james.imapserver | ID=171189534 Connection closed for 127.0.0.1
+INFO  08:23:57,387 | james.imapserver | ID=523323856 Connection closed for 127.0.0.1
+INFO  08:23:57,394 | james.imapserver | ID=1942476467 Connection closed for 127.0.0.1
+INFO  08:23:57,404 | james.imapserver | ID=871260505 Connection closed for 127.0.0.1
+INFO  08:23:57,409 | james.imapserver | ID=2042225844 Connection closed for 127.0.0.1
+INFO  08:23:57,414 | james.imapserver | ID=1620112377 Connection closed for 127.0.0.1
+INFO  08:24:55,758 | james.imapserver | ID=1211730239 Connection established from 127.0.0.1
+INFO  08:24:56,162 | james.imapserver | ID=1211730239 Connection closed for 127.0.0.1
+INFO  08:25:04,264 | james.imapserver | ID=1020979876 Connection established from 127.0.0.1
+INFO  08:25:04,451 | james.imapserver | ID=1020979876 Connection closed for 127.0.0.1
+INFO  08:25:37,737 | james.imapserver | ID=983288688 Connection established from 127.0.0.1
+INFO  08:25:37,971 | james.imapserver | ID=983288688 Connection closed for 127.0.0.1
+INFO  08:25:41,510 | james.imapserver | ID=485340820 Connection established from 127.0.0.1
+INFO  08:25:41,881 | james.imapserver | ID=1439823239 Connection established from 127.0.0.1
+INFO  08:25:41,999 | james.imapserver | ID=1439823239 Connection closed for 127.0.0.1
+INFO  08:25:42,292 | james.imapserver | ID=485340820 Connection closed for 127.0.0.1

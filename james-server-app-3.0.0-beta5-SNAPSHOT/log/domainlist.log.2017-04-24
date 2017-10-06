@@ -1,0 +1,22 @@
+INFO  10:41:56,983 | james.domainlist | Set autodetect to: true
+INFO  10:41:56,983 | james.domainlist | Set autodetectIP to: true
+INFO  12:43:28,641 | james.domainlist | Set autodetect to: true
+INFO  12:43:28,641 | james.domainlist | Set autodetectIP to: true
+INFO  14:51:29,267 | james.domainlist | Set autodetect to: true
+INFO  14:51:29,273 | james.domainlist | Set autodetectIP to: true
+INFO  15:32:50,882 | james.domainlist | Set autodetect to: true
+INFO  15:32:50,885 | james.domainlist | Set autodetectIP to: true
+INFO  15:53:20,651 | james.domainlist | Set autodetect to: true
+INFO  15:53:20,652 | james.domainlist | Set autodetectIP to: true
+INFO  15:55:59,851 | james.domainlist | Local host is: 192.168.56.1
+ERROR 15:56:14,954 | james.domainlist | Cannot get IP address(es) for localhost
+ERROR 15:56:45,082 | james.domainlist | Cannot get IP address(es) for nwtis.nastava.foi.hr
+INFO  15:57:48,501 | james.domainlist | Local host is: 192.168.56.1
+ERROR 15:57:48,503 | james.domainlist | Cannot get IP address(es) for localhost
+ERROR 15:57:48,504 | james.domainlist | Cannot get IP address(es) for nwtis.nastava.foi.hr
+INFO  16:52:02,600 | james.domainlist | Set autodetect to: true
+INFO  16:52:02,601 | james.domainlist | Set autodetectIP to: true
+INFO  18:09:45,330 | james.domainlist | Set autodetect to: true
+INFO  18:09:45,332 | james.domainlist | Set autodetectIP to: true
+INFO  20:39:36,594 | james.domainlist | Set autodetect to: true
+INFO  20:39:36,594 | james.domainlist | Set autodetectIP to: true
